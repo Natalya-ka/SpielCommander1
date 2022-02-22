@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
 
-        GameCharacter hero = new GameCharacter("Knight", 10, 3, 1);
-        GameCharacter monster = new GameCharacter("Goblin", 6, 1, 0);
-        GameCharacter monster1 = new GameCharacter("Troll", 10, 1, 0);
+        GameCharacter hero = new GameCharacter("Knight", 10, 3, 1,1,0);
+        GameCharacter monster = new GameCharacter("Goblin", 6, 1, 0,0,0);
+        GameCharacter monster1 = new GameCharacter("Troll", 10, 1, 0,0,0);
         Battle battle = new Battle(hero, monster, monster1);
         battle.start();
 
