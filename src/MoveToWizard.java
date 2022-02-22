@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
-public class MoveToWizard  {
+public class MoveToWizard {
 
 
-    static Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
     static String input;
 
+    public MoveToWizard() {
+
+    }
 
     public static void MoveToWizard() {
-
+        ;
         do {
             System.out.println("Make your choice:\n" +
                     "1: Buy Elexir\n" +
@@ -27,11 +30,15 @@ public class MoveToWizard  {
         }
         while (!input.equals("2"));
     }
-    static private void buyElexir() {
+
+    private static void buyElexir() {
 
             System.out.println("You have got a elexir");
+
         }
+
     }
+
 
 
 

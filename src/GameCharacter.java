@@ -1,21 +1,24 @@
 public class GameCharacter {
 
+
     String name;
     int hp;
     int maxHp;
     int attackPower;
     boolean block;
     int gold;
+    int experience;
+    int elexir;
 
-
-    public GameCharacter(String name, int maxHp, int attackPower, int gold) {
+    public GameCharacter(String name, int maxHp, int attackPower, int gold, int experience, int elexir) {
         this.name = name;
         this.maxHp = maxHp;
         this.hp = this.maxHp;
         this.attackPower = attackPower;
         this.block = false;
         this.gold = gold;
-
+        this.experience = experience;
+        this.elexir=elexir;
     }
 
     public void attack(GameCharacter target) {
@@ -48,7 +51,13 @@ public class GameCharacter {
 
     public void getsGold() {
         gold++;
+
     }
+    public void getExperience(){
+        experience++;
+    }
+
 }
+
 
 
